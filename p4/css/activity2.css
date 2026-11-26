@@ -1,0 +1,220 @@
+/*Estos estilos son los extras que se van a cargar despues de que se carguen los de la pagina en general del inicio*/
+
+/*Enlaces anctivos del menu*/
+header nav a.activo {
+    color: white;
+}
+
+.ruta-navegacion {
+    padding: 20px 40px 0;
+    font-size: 12px;
+    font-weight:bold;
+    color: gray;
+}
+
+.ruta-navegacion a {
+    color: #003272;
+    text-decoration: none;
+}
+
+/* FLEXBOX: artículo a la izquierda, sidebar a la derecha */
+.contenedor {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;        /*Alinea los items hijos por defecto en vertical*/
+    padding: 20px 40px 40px;
+}
+ 
+.articulo {
+    flex: 1;        /* ocupa todo el espacio sobrante */
+    min-width: 0;
+}
+
+.sidebar {
+    flex: 0 0 300px;    /* ancho fijo */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
+/* Artículo */
+.articulo h1 {
+    font-size: 32px;
+    line-height: 1.15;
+    margin: 12px 0 16px;
+}
+ 
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+ 
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #003272;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+ 
+.autor-info {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.autor-info strong { 
+    font-size: 14px;
+}
+
+.autor-info small  { 
+    font-size: 11px;
+    color: #777;
+}
+ 
+.articulo-img {
+    height: 220px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #bfe3fb, #e8f5fe);
+    display: grid;
+    place-items: center;
+    font-size: 70px;
+    margin-bottom: 24px;
+}
+ 
+.articulo p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 14px;
+}
+ 
+.articulo h2 {
+    font-size: 20px;
+    margin: 26px 0 10px;
+}
+ 
+.articulo blockquote {
+    background: #e8f5fe;
+    border-left: 4px solid #2aa5f2;
+    padding: 14px 18px;
+    border-radius: 6px;
+    font-style: italic;
+    font-size: 14px;
+    color: #003272;
+    margin: 20px 0;
+}
+ 
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+ 
+.etiquetas span {
+    background: #e5e7eb;
+    color: #444;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+ 
+/* Sidebar */
+.widget {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px #e0e0e0;
+}
+ 
+.widget h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+ 
+.widget p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+ 
+.widget input {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 14px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 13px;
+}
+ 
+.btn-completo {
+    width: 100%;
+}
+ 
+.indice {
+    list-style: none;
+}
+ 
+.indice li {
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+}
+ 
+.indice li:last-child { /*last-child es el ultimo elemento entre un grupo de elementos hermanos*/
+    border-bottom: none; 
+}
+ 
+.indice a {
+    color: #003272;
+    text-decoration: none;
+    font-size: 12px;
+}
+ 
+.widget-oscuro {
+    background: #003272;
+    border-radius: 10px;
+    
+}
+ 
+.widget-oscuro h3, .widget-oscuro p {
+    color: white ;
+    font-size: 15px;
+}
+ 
+/* Artículos relacionados */
+.relacionados {
+    padding: 0 40px 40px;
+}
+ 
+.relacionados h2 {
+    margin-bottom: 20px;
+}
+ 
+/* Apartado para la vista en Celular */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        padding: 20px;
+    }
+ 
+    .sidebar {
+        flex: auto;
+        width: 100%;
+    }
+ 
+    .ruta-navegacion, .relacionados {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+ 
+    .articulo h1 { 
+        font-size: 26px; 
+    }
+}

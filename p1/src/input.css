@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-brand: #39A900;
+    --color-brand-dark: #2E7D32;
+    --font-titulos: "Montserrat", sans-serif;
+}

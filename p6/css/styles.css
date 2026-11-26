@@ -1,0 +1,140 @@
+:root {
+    --color-fondo-pagina: linear-gradient(90deg,white, rgb(3, 209, 255));
+    --color-primario:aqua;
+    --color-fondo-superior:linear-gradient(90deg, rgb(3, 209, 255), white);
+    --color-fondo-articulos:white;
+    --color-texto:#1e293b;
+    --color-texto-secundario: #ffffff;
+    --espaciado: 16px;
+    --radio-borde: 16px;
+    --color-fondo-boton: rgb(83, 83, 255);
+}
+
+.oscuro {
+    --color-primario:aqua;
+    --color-fondo-pagina:linear-gradient(90deg,rgb(65, 65, 65), black);
+    --color-fondo-superior:linear-gradient(90deg, rgb(34, 33, 33), rgb(107, 107, 107));
+    --color-fondo-articulos: #4a4a4a;
+    --color-texto:#f1f5f9;
+    --color-texto-secundario: #ffffff;
+    --espaciado: 16px;
+    --radio-borde: 16px;
+    --color-fondo-boton: rgb(13, 144, 144);
+}
+
+body {
+    background: var(--color-fondo-pagina);
+    margin: 0px;
+    color: var(--color-texto);
+    font-family: 'Times New Roman', Times, serif;
+} /*Fondo y estilo de la pagina*/
+
+.titulo-1{
+    text-align: center;
+}/*Primer titulo*/
+
+header{
+    background: var(--color-fondo-superior);
+    width: 85%;
+    margin: 0 auto;
+    padding: var(--espaciado);
+    border-bottom: 2px solid gray;
+    overflow: hidden;
+}
+
+.logo{
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    float: right;
+}
+
+
+.menu {
+    background-color: var(--color-fondo-pagina);
+    padding: var(--espaciado);
+    border-radius: var(--radio-borde);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+
+.menu a {
+    color: var(--color-texto);
+    text-decoration: none;
+    margin-left: 16px;
+} /*Encabezado de la pagina desde el primer titulo*/
+
+/*Parte central de la pagina*/
+.titulo-pagina{
+    text-align: center;
+    color: var(--color-texto);
+    margin: 26px 0;
+}
+
+
+.titulo-pagina h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.titulo-pagina p {
+    font-size: 15px;
+}
+
+.titulo-pagina button {
+    background-color: var(--color-fondo-boton);
+    color: var(--color-texto-secundario);
+    border: none;
+    padding: var(--espaciado);
+    border-radius: var(--radio-borde);
+    margin-top: 15px;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+}/*Estilo del titulo central, texto central y boton */
+
+/*Estilo de las tarjetas*/
+.seccion-articulos {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+.articulos {
+    background-color: var(--color-fondo-articulos);
+    padding: var(--espaciado);
+    border-radius: var(--radio-borde);
+    text-align: center;
+    flex: 1;
+}
+.articulos h3 {
+    font-size: 14px;
+    color: var(--color-texto);
+    margin-bottom: 5px;
+}
+
+.articulos p {
+    font-size: 11px;
+    color: var(--color-texto);
+} /*Estilo de las tarjetas*/
+
+#boton-tema {
+    color: var(--color-texto-secundario);
+    width: 150px;
+    padding: var(--espaciado);
+    display: flex;
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+    border: none;
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: var(--color-fondo-boton);
+    border: 1px solid whitesmoke;
+    justify-content: center;
+}

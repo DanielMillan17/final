@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Input Radio (Ocultos al inicio del body con css)-->
+     <input type="radio" name="navegacion" id="tab-inicio" class="tab-input" checked>
+     <input type="radio" name="navegacion" id="tab-nosotros" class="tab-input">
+     <input type="radio" name="navegacion" id="tab-servicios" class="tab-input">
+     <input type="radio" name="navegacion" id="tab-portafolio" class="tab-input">
+     <input type="radio" name="navegacion" id="tab-contacto" class="tab-input">
+
+     <!--header superior-->
+    <header>
+        <div class="logo-area">
+            <img src="img/img1.avif" alt="Logo">
+            <h1>Mi Sitio Web</h1>
+        </div>
+        <div class="header-info">
+            <span>Panel de Control</span>
+        </div>
+    </header>
+
+    <!--Contenedor general de la pagina -->
+
+<div class="app-container">
+     <!--Navegacion lateral (Izquierda)-->
+     <aside>
+        <h3>Menu Principal</h3>
+        <label for="tab-inicio" class="tab-label">Inicio</label>
+        <label for="tab-nosotros" class="tab-label">Nosotros</label>
+        <label for="tab-servicios" class="tab-label">Servicios</label>
+        <label for="tab-portafolio" class="tab-label">Portafolio</label>
+        <label for="tab-contacto" class="tab-label">Contacto</label>
+     </aside>
+
+     <main>
+        <div id="panel-inicio" class="content-panel">
+            <h2>Bienvenido al Inicio</h2>
+            <p>
+                Diseñamos y desarrollamos páginas web, aplicaciones y proyectos digitales que no solo funcionan, sino que generan impacto. Sin plantillas genéricas, sin procesos engorrosos: solo una ruta clara desde tu idea hasta el producto final.
+            </p>
+
+            <h2>Misión</h2>
+            <p>Construir productos digitales —websites, apps y soluciones a medida— que resuelvan problemas concretos de nuestros clientes con la menor complejidad posible y el máximo impacto medible.</p>
+
+            <h2>Visión</h2>
+            <p>Ser el aliado técnico de referencia para empresas que necesitan ejecutar sus ideas digitales sin fricción: desde la primera conversación hasta el producto escalable en producción.</p>
+        </div>
+        <div id="panel-nosotros" class="content-panel">
+            <h2>Acerca de Nosostros</h2>
+            <p>
+                Somos un equipo de desarrolladores y diseñadores que construye productos digitales para resolver problemas reales. No vendemos tecnología por tecnología: escuchamos, entendemos el problema y proponemos la solución más eficiente.
+            </p>
+            <h3>Lo que nos define:</h3>
+            <p><ul>Claridad antes que complejidad.</ul>
+                <ul>Entregas funcionales y medibles.</ul>
+                <ul>Acompañamiento post-lanzamiento.</ul>
+            </p>
+        </div>
+        <div id="panel-servicios" class="content-panel">
+            <h2>Nuestros Servicios</h2>
+            <p>
+            Diseñamos y desarrollamos páginas web, aplicaciones y proyectos digitales que no solo funcionan, sino que generan impacto. Sin plantillas genéricas, sin procesos engorrosos: solo una ruta clara desde tu idea hasta el producto final.
+            </p>
+        </div>
+        <div id="panel-portafolio" class="content-panel">
+            <h2>Portafolio de Proyectos</h2>
+            <p>
+                Cada proyecto que entregamos resuelve un problema concreto. Aquí, una selección de lo que hemos construido y el resultado que generó.
+            </p>
+
+            <div class="contenedor-tarjetas">
+
+                <div id="proyecto1" class="tarjeta">
+                    <img src="img/imgServicio1.png" alt="Servicio Web">
+                    <h3>Estructura Web</h3>
+                    <p>Este servicio se encarga de realizar una estructura base para continuar con los estilos e interacciones de la página o aplicación.</p>
+                </div>
+
+                <div id="proyecto2" class="tarjeta">
+                    <img src="img/imgServicio2.png" alt="Servicio Web">
+                    <h3>Formulario Web</h3>
+                    <p>Este servicio se encarga de realizar una estructura base para continuar con los estilos e interacciones de la página o aplicación.</p>
+                </div>
+
+                <div id="proyecto3" class="tarjeta">
+                    <img src="img/imgServicio3.png" alt="Servicio Web">
+                    <h3>Estilo o Diseños Web</h3>
+                    <p>Este servicio se encarga de realizar una estructura base para continuar con los estilos e interacciones de la página o aplicación.</p>
+                </div>
+                <div id="proyecto4" class="tarjeta">
+                    <img src="img/imgServicio3.png" alt="Servicio Web">
+                    <h3>Desarrollo Backend</h3>
+                    <p>Implementación de la lógica del servidor, gestión de usuarios, autenticación y conexión con bases de datos.</p>
+                </div>
+                <div id="proyecto5" class="tarjeta">
+                    <img src="img/imgServicio3.png" alt="Servicio Web">
+                    <h3>Administracion de Bases de Datos</h3>
+                    <p>Diseño, creación y optimización de bases de datos relacionales utilizando SQL para garantizar seguridad y rendimiento.</p>
+                </div>
+                <div id="proyecto6" class="tarjeta">
+                    <img src="img/imgServicio3.png" alt="Servicio Web">
+                    <h3>Aplicaciones Web</h3>
+                    <p>Desarrollo de sistemas web dinámicos orientados a la gestión de información y automatización de procesos.</p>
+                </div>
+                <div id="proyecto7" class="tarjeta">
+                    <img src="img/imgServicio3.png" alt="Servicio Web">
+                    <h3>Mantenimiento y Soporte</h3>
+                    <p>Corrección de errores, actualización de contenido y optimización del rendimiento de sitios web existentes.</p>
+                </div>
+                <div id="proyecto8" class="tarjeta">
+                    <img src="img/imgServicio3.png" alt="Servicio Web">
+                    <h3>Seguridad Informática</h3>
+                    <p>Implementación de buenas prácticas de seguridad para proteger la información y los servicios digitales.</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="panel-contacto" class="content-panel">
+            <h2>Contáctanos</h2>
+            <p>
+                ¿Tienes un proyecto en mente, una idea que necesita forma o un producto que no funciona como debería? Cuéntanos.
+            </p>
+            <p>
+                La primera conversación es sin costo y sin compromiso. Nos cuentas qué necesitas, te decimos cómo lo resolveríamos y, si hay fit, avanzamos.
+            </p>
+            <div class="contenedor-info">
+
+                <div id="contacto" class="tarjeta">
+                    
+                    <h4>Email</h4>
+                    <p>miweb@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        
+
+     </main>
+</div>
+</body>
+</html>

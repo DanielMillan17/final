@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi landing onepage - Boostrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#menu" data-bs-offset="70">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="menu">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">Mi marca</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" aria-controls="opciones" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="opciones">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-info text-dark text-center py-5 min-vh-100 d-flex align-items-center" id="inicio">
+        <div class="container pt-5">
+            <h1 class="display-4 fw-bold">Creamos sitios web que hacen <br> el trabajo por ti</h1>
+            <p class="lead">Diseño, desarrollo y paginas responsivas para tu empresa.</p>
+            <a href="#servicios" class="btn btn-light btn-lg mt-3">Conoce más</a>
+        </div>
+    </header>
+
+    <section class="py-5" id="servicios">
+        <div class="container">
+            <h2 class="text-center mb-4">Servicios</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://imgs.search.brave.com/2fTJ2zv3cNt4PUNNFZfH0aaH0fpMGBLckJNlohm6O4s/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ZlY3Rvci1ncmF0/aXMvY29uY2VwdG8t/bW9kZXJuby1kaXNl/bm8td2ViLWVzdGls/by1wbGFub18yMy0y/MTQ3OTM0NzMxLmpw/Zz9zZW10PWFpc19o/eWJyaWQmdz03NDAm/cT04MA" class="card-img-top" height="250px" alt="Servicio 1">
+                        <div class="card-body">
+                            <h5 class="card-tittle">Diseño web</h5>
+                            <p class="card-tex">Páginas claras y atractivas que se ven bien en cualquier dispositivo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://imgs.search.brave.com/Uapp0DBk7o2EcELIdk6Auxki2EnSJlvy3rtpz94EMho/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tYWls/cmVsYXkuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI2LzEw/L3Jlc3BvbnNpdmUt/YWRhcHRhdGl2by1t/b2JpbGUtZmlyc3Qu/cG5n" height="250px" class="card-img-top" alt="Servicio 1">
+                        <div class="card-body">
+                            <h5 class="card-tittle">Desarrollo a la medida</h5>
+                            <p class="card-tex">Funcionalidades personalizadas según lo que necesita tu proyecto.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://imgs.search.brave.com/o0CGKHGyvqjYmociMIkPG-5Tmt6anNrSXguMl0W92J8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kZXN0/YWthbWFya2V0aW5n/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8wOS9tYW50/ZW5pbWllbnRvLWRl/LXdlYi0xMDI0eDUz/OC53ZWJw" height="250px" class="card-img-top" alt="Servicio 1">
+                        <div class="card-body">
+                            <h5 class="card-tittle">Soporte y mantenimiento</h5>
+                            <p class="card-tex">Páginas claras y attactivas que se ven claras en cualquier dispositivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light" id="portafolio">
+        <div class="container">
+            <h2 class="text-center mb-4">Portafolio</h2>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <img src="https://imgs.search.brave.com/bWsf_3WhriarquzGv8J8obbjvNfVQVVRASdyHE3Vohg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDQv/NTc4LzkwMS9zbWFs/bC90aGUtd2ViLWRl/dmVsb3Blci10ZWFt/LWlzLWJ1aWxkaW5n/LWEtbGFuZGluZy1w/YWdlLWZyZWUtdmVj/dG9yLmpwZw" class="img-fluid rounded" alt="Proyecto 1">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="https://imgs.search.brave.com/sok97CFChY4hA6E-tShOnT129roskQpzcW3wF2Ypup0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDQv/MTEzLzY2My9zbWFs/bC93ZWItZGV2ZWxv/cG1lbnQtaXNvbWV0/cmljLXdlYi1jb25j/ZXB0LXBlb3BsZS1j/cmVhdGUtYW5kLW9w/dGltaXplLWEtd2Vi/LXBhZ2Utd29yay13/aXRoLWNvZGUtYW5k/LWludGVyZmFjZS1k/ZXNpZ24tcHJvZ3Jh/bW1lcnMtdGVhbXdv/cmstc2NlbmUtaWxs/dXN0cmF0aW9uLWZv/ci13ZWJzaXRlLXRl/bXBsYXRlLWluLTNk/LWRlc2lnbi12ZWN0/b3IuanBn" class="img-fluid rounded" alt="Proyecto 2">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="https://imgs.search.brave.com/pWUN-DuLK8un9_OyQPxF_dNN7_d3i8GCuz779WFQC5U/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDAv/Njk1Lzc5NS9zbWFs/bC9zb2Z0d2FyZS1k/ZXZlbG9wbWVudC1h/bmQtY29kaW5nLWxh/bmRpbmctcGFnZS5q/cGc" class="img-fluid rounded"  alt="Proyecto 3">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="https://imgs.search.brave.com/ca63ppbxdzP713UKijsHxyrZ2JhfeNVywFmhf7ri1QY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDUv/NjExLzI3MS9zbWFs/bC93ZWItZGV2ZWxv/cG1lbnQtY29uY2Vw/dC1pbGx1c3RyYXRp/b24tcHJvZ3JhbW1l/cnMtYW5kLXdlYi1k/ZXZlbG9wZXJzLWFy/ZS13b3JraW5nLXRv/LWNyZWF0ZS1wYXNz/d29yZHMtc2FsZXMt/d2Vic2l0ZXMtYW5k/LXdlYi1hbmFseXRp/Y3MtZmxhdC1zdHls/ZS1jYXJ0b29uLWls/bHVzdHJhdGlvbi1m/cmVlLXZlY3Rvci5q/cGc" class="img-fluid rounded" alt="Proyecto 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="contacto">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <form class="mx-auto was-validated" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre: </label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre..." required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo: </label>
+                    <input type="email" class="form-control" id="correo" placeholder="nombre@correo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje </label>
+                    <textarea class="form-control" id="mensaje" rows="4" placeholder="¿En qué te pódemos ayudar?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-info">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">Sitio consruido con Bootstrap 5</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+</body>
+</html>

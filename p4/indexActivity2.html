@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeskSoft - Articulos</title>
+    <link rel="stylesheet" href="css/activity.css">
+    <link rel="stylesheet" href="css/activity2.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">💻DeskSoft</div>
+        <nav>
+            <a href="indexActivity.html">Inicio</a>
+            <a href="indexActivity.html" class="activo" >Artículos</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <button class="btn-suscribete">Suscríbete</button>
+    </header>
+
+
+    <!--Ruta de acceso o seguimiento de la pagina-->
+    <div class="ruta-navegacion"> <!--Se realizo con ayuda de investigación en internet-->
+        <a href="indexActivity.html">Inicio</a> , <a href="indexActivity2.html">Artículos</a> , <span>Estructura web</span>             <!--esta Ruta de acceso se realizo con ayuda de investigación en internet-->
+    </div>
+
+    <!--Contenedor principal con el flexbox: Apartado de los articulos + la barra del lado derecho  -->
+    <div class="contenedor">
+
+        <article class="articulo">
+            <span class="tag">Estructura web</span>
+            <h1>Cómo realizar tu estructura web en 4 pasos</h1>
+
+            <div class="autor">
+                <div class="avatar">DM</div>
+                <div class="autor-info">
+                    <strong>Daniel Millan</strong>
+                    <small>Actualizado el 29 de octubre del 2026 . 6 min de lectura</small>     <!--son las letras que aparecen pequeñas debajo de un texto o parrafo identificando quien lo hizo o en este caso cuanto tiempo de lectura es-->
+                </div>
+            </div>
+
+            <div class="articulo-img">🏗️</div>
+
+            <p class="intro">Crear la estructura de una página web es mucho más fácil de lo que parece. Con HTML semántico y unos hábitos básicos puedes construir una base sólida sobre la cual agregar estilos e interacciones, reduciendo errores y el tiempo de mantenimiento de si misma.</p>
+
+            <h2 id="paso1">1. Define las secciones de la página</h2>
+            <p>Antes de empezar a escribir el código, piensa qué partes tendrá tu sitio o página web: encabezado, navegación, contenido principal y pie de página. Lo importante es que cada sección tenga un propósito claro y se pueda identificar fácilmente.</p>
+
+            <blockquote>La regla de oro de la estructura: cada elemento HTML debe describir el tipo de contenido que contiene, no cómo se ve.</blockquote><!--El blockquote de acuerdo a consultas en internet esto sirve para delimitar un bloque de texto que es extenso -->
+
+            <br><!--Salto de linea-->
+
+            <h2 id="paso2">2. Usa etiquetas semánticas</h2>
+            <p>Etiquetas como <strong>header</strong>, <strong>nav</strong>, <strong>main</strong>, <strong>article</strong> y <strong>footer</strong> ayudan a los navegadores, a los buscadores y a las personas que usan lectores de pantalla a entender tu página. Evita llenarla de <strong>div</strong> sin significado.</p>
+
+            <br>
+
+            <h2 id="paso3">3. Organiza el diseño con Flexbox y Grid</h2>
+            <p><strong>Flexbox</strong> es ideal para alinear los elementos en una sola dirección, como menús o columnas, mientras que <strong>Grid</strong> funciona mejor para cuadrículas de tarjetas. Combinarlos te permite crear diseños que se adaptan a cualquier tipo o resolución de pantalla.</p>
+
+            <br>
+
+            <h2 id="paso4">4. Revisa que sea responsive</h2>
+            <p>Prueba tu estructura en pantallas pequeñas como en (moviles o tablets pequeñas) y grandes como los son (Laptops y euqipos de mesa). Usa la etiqueta <strong>viewport</strong> y <strong>@media</strong> para que el contenido se reorganice en celulares sin perder legibilidad.</p>
+
+            <div class="etiquetas">
+                <span>#html</span>
+                <span>#estructura</span>
+                <span>#semántica</span>
+                <span>#flexbox</span>
+            </div>
+        </article>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>📬 Boletín</h3>
+                <p>Recibe una guía práctica de desarrollo cada lunes en tu correo.</p>
+                <input type="email" placeholder="tu@correo.com">
+                <button class="btn-superior ">Suscribirme</button>
+            </div>
+ 
+            <div class="widget">
+                <h3>📖 Contenido</h3>
+                <ul class="indice">
+                    <li><a href="#paso1">1. Define las secciones</a></li>
+                    <li><a href="#paso2">2. Usa etiquetas semánticas</a></li>
+                    <li><a href="#paso3">3. Organiza con Flexbox y Grid</a></li>
+                    <li><a href="#paso4">4. Revisa que sea responsive</a></li>
+                </ul>
+            </div>
+
+            <div class="widget-oscuro">
+                <h3>💡 Dato rápido</h3>
+                <p>Una buena estructura HTML mejora el posicionamiento en buscadores y la accesibilidad de tu sitio sin necesidad de escribir CSS adicional.</p>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Artículos relacionados -->
+    <section class="relacionados">
+        <h2>Artículos relacionados</h2>
+        <div class="grid">
+            <article class="card">
+                <div class="card-img3">🌈</div>
+                <div class="card-body">
+                    <h3>Estilo de la página</h3>
+                    <small>Por Daniel Millan · 7 min</small>
+                </div>
+            </article>
+ 
+            <article class="card">
+                <div class="card-img2">🛍️</div>
+                <div class="card-body">
+                    <h3>Seguridad informática</h3>
+                    <small>Por Daniel Millan · 5 min</small>
+                </div>
+            </article>
+ 
+            <article class="card">
+                <div class="card-img4">➕⚙️</div>
+                <div class="card-body">
+                    <h3>Desarrollo backend</h3>
+                    <small>Por Diego Soto · 10 min</small>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    </div>
+    <footer>
+        <div>
+            <strong>💻DeskSoft</strong>
+            <p>Un blog para implementar desarrollo.</p>
+        </div>
+        <div>
+            <strong>Secciones</strong>
+            <p>Estructura web<br>Segurirdad informática<br>Diseño web<br>Desarrollo backend<br>Mantenimiento y soporte<br>Aplicaciones web</p>
+        </div>
+        <div>
+            <strong>Síguenos</strong>
+            <p>Instagram<br>YouTube<br>Facebookk</p>
+        </div>
+    </footer>
+</body>
+</html>

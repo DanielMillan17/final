@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body { background: #f7f7f7; /*Fondo y color de texto general de la pagina*/
+    color: #222;
+}
+
+header {
+    background-color: #2aa5f2;/*Fondo del apartado superior o encabezado*/
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;/*Logo a la izquierda y los enlaces a la derecha*/
+    align-items: center;
+    padding: 15px 40px;
+}
+
+header nav a:hover {
+    color: white; /*Al poner el mouse sobre las palabras del encabezado se ponen de color blanco*/
+}
+
+header nav a { /*Texto del encabezado */
+    color: black;
+    text-decoration: none; 
+    margin: 0 10px; 
+    font-size: 14px; 
+}
+
+.btn-suscribete { 
+    background: #003272; 
+    color: white; 
+    border: none; 
+    padding: 6px 14px; 
+    border-radius: 20px; 
+    cursor: pointer; 
+}
+
+.titulo {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    gap: 2rem;
+    padding: 50px 40px; 
+    background: white;
+}
+
+.titulo-text { 
+    max-width: 50%; 
+    flex: 1;
+}
+
+.badge { 
+    color: blue; 
+    font-size: 12px; 
+    font-weight: bold;
+}
+
+.titulo-text h1 { 
+    font-size: 36px; 
+    margin: 10px 0; 
+    line-height: 1.1; 
+}
+
+.titulo-text p { 
+    color: #666; 
+    margin-bottom: 20px; 
+    font-size: 14px; 
+}
+
+.btn-superior { 
+    background: #003272; 
+    color: white; 
+    border: none; 
+    padding: 10px 18px; 
+    border-radius: 20px; 
+    cursor: pointer; 
+}
+
+.titulo-img {
+    flex: 1;
+}
+
+.titulo-img img {
+    width: 80%;
+    height: auto;
+}
+
+.filtros { 
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+    padding: 30px; 
+    flex-wrap: wrap; 
+}
+
+.filtros span { 
+    background: white; 
+    padding: 6px 14px; 
+    border-radius: 20px; 
+    font-size: 12px; 
+    box-shadow: 0 1px 3px #ddd; 
+}
+
+main { 
+    padding: 0 40px 40px; 
+}
+
+main h2 { 
+    margin-bottom: 20px; 
+}
+
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+
+.card { 
+    background: white; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 8px #e0e0e0; 
+}
+
+.card-img { 
+    height: 110px; 
+    display: grid; 
+    place-items: center; 
+    font-size: 40px; 
+}
+
+.card-img1 { 
+    background: #d4edda; 
+} 
+
+.card-img2 { 
+    background: #bde8d3; 
+}
+
+.card-img3 { 
+    background: #fef3c7; 
+}
+                            /*Fondos de las tarjetas */
+.card-img4 { 
+    background: #dbeafe; 
+}
+.card-img5 { 
+    background: #e9d5ff; 
+}
+
+.card-img6 { 
+    background: #e5e7eb;
+}
+
+
+.card-body { 
+    padding: 15px; 
+}
+
+.tag { 
+    background: #e6f4ea; 
+    color: #2e8b77; 
+    font-size: 10px; 
+    padding: 3px 7px; 
+    border-radius: 4px; 
+    font-weight: bold; 
+}
+
+.card-body h3 { 
+    font-size: 14px; 
+    margin: 8px 0; 
+}
+
+.card-body p, .card-body small { 
+    font-size: 11px; 
+    color: #777; 
+}
+
+footer { 
+    background: #2aa5f2; 
+    color: black; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px 50px; 
+    font-size: 12px; 
+}
+
+footer strong { 
+    color: white; 
+    display: block; 
+    margin-bottom: 8px; 
+}
+
+
+/* Para celular */
+@media (max-width: 768px) {
+    .titulo { 
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .titulo-text, .titulo-img { 
+        max-width: 100%; 
+        width: 100%; 
+    }
+
+    .grid { 
+        grid-template-columns: 1fr; 
+    }
+
+    header { flex-wrap: wrap; }
+}
