@@ -1,38 +1,32 @@
 :root {
-    --color-primario: aqua;
     --color-fondo-pagina: linear-gradient(90deg, white, rgb(162, 229, 255));
     --color-fondo-header: linear-gradient(90deg, rgb(249, 248, 248), skyblue);
     --color-fondo-tarjeta: #ffffff;
     --color-texto: #1e293b;
     --color-texto-header: black;
-    --color-texto-secundario: #64748b;
-    --espaciado: 16px;
     --radio-borde: 50px;
+    --borde-boton: black;
+    --color-sombra:orange;
+    --color-sombra-boton: blue;
+    --color-sombra-boton1: blue;
+    --color-sombra-boton2: darkorange;
 }
 
 .oscuro {
-    --color-primario: aqua;
-    --color-fondo-pagina: rgb(26, 54, 65);
-    --color-fondo-header: linear-gradient(90deg, rgb(120, 119, 119), rgb(20, 86, 112));
+    --color-fondo-pagina: radial-gradient( rgb(65, 64, 64), black);
+    --color-fondo-header: linear-gradient(90deg, rgb(65, 64, 64), black);
     --color-fondo-tarjeta: #1e291e;
     --color-texto: #f1f5f9;
     --color-texto-header: white;
-    --color-texto-secundario: #94a3b8;
-    --espaciado: 16px;
     --radio-borde: 16px;
+    --borde-boton: white;
+    --color-sombra:cyan;
+    --color-sombra-boton: aquamarine;
+    --color-sombra-boton1:mediumvioletred;
+    --color-sombra-boton2:aqua;
+
 }
 
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-}
 
 body {
     background: var(--color-fondo-pagina);
@@ -41,10 +35,19 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: medium;
     padding: var(--espaciado);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+header {
+    background: var(--color-fondo-header);
+    box-shadow: 0 1px 2px rgb(0, 215, 215);
+    color: var(--color-texto-header);
+    padding: 0.5rem 1rem;
 }
 
-header,
-nav {
+header, nav {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -55,12 +58,7 @@ nav {
     gap: 0.75rem 1.25rem;
 }
 
-header {
-    background: var(--color-fondo-header);
-    box-shadow: 0 1px 2px rgb(0, 215, 215);
-    color: var(--color-texto-header);
-    padding: 0.5rem 1rem;
-}
+
 
 @media (min-width: 768px) {
     header {
@@ -71,7 +69,7 @@ header {
 
 .logo {
     color: var(--color-texto);
-    text-shadow: 0 2px 2px orange;
+    text-shadow: 0 2px 2px var(--color-sombra);
     font-weight: bold;
     font-size: x-large;
     margin-right: auto;
@@ -92,17 +90,18 @@ header {
 }
 
 #boton-tema, #boton-cv {
-    padding: 10px 20px;
+    padding: 8px 20px;
     border-radius: var(--radio-borde);
     cursor: pointer;
-    border: 1px solid lightblue;
+    border: 1px solid white;
+    box-shadow: 0 2px 15px -2px var(--color-sombra-boton);
     background: cadetblue;
     color: var(--color-texto-header);
-    font-weight: 500;
+    font-weight: bolder;
 }
 
 #boton-tema {
-    margin-right: 0.75rem;
+    margin-right: 12px;
 }
 
 .menu1 {
@@ -117,11 +116,11 @@ header {
     display: flex;
     flex-direction: column-reverse; /* En móvil: foto arriba, texto abajo */
     align-items: center;
-    gap: 1.5rem;
+    gap: 24px;
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 32px 16px;
 }
 
 .nombre, .alias, .desnom {
@@ -133,24 +132,56 @@ header {
 .nombre {
     font-size: x-large;
     margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 .nombre, #nom1 {
-    color: #1e293b;
-    text-shadow: 0 0 4px orangered;
+    color: var(--color-texto);
+}
+
+#nom1 {
+    text-shadow: 0 5px 3px var(--color-sombra);
 }
 
 .alias {
     display: block;
     margin-top: -6px;
-    margin-bottom: 0.75rem;
+    margin-bottom: 12px;
     font-size: small;
 }
 
 .desnom {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+#contact {
+    border-radius: var(--radio-borde);
+    border-color: transparent;
+    margin-top: 32px;
+    color: var(--color-texto);
+    font-size: 14px;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin-left: 15px;
+    cursor: pointer;
+    border: 1px solid var(--borde-boton);
+    box-shadow: 0 0 20px -2px var(--color-sombra-boton2);
+}
+
+#verp {
+    border-radius: var(--radio-borde);
+    border-color: transparent;
+    margin-top: 32px;
+    color: var(--color-texto);
+    font-size: 14px;
+    background-color: dodgerblue;
+    font-weight: bold;
+    padding: 8px 15px;
+    cursor: pointer;
+    border: 1px solid var(--borde-boton);
+    box-shadow: 0 0 20px -2px var(--color-sombra-boton1);
 }
 
 #foto-perfil {
@@ -161,8 +192,10 @@ header {
     object-fit: cover;
     display: block;
     flex-shrink: 0;
-    box-shadow: 0 10px 26px -4px greenyellow;
+    box-shadow: 0 0px 26px -2px var(--color-sombra);
     margin: 0 auto;
+    cursor: pointer;
+    border:2px solid white;
 }
 
 img.cont-nom {
@@ -171,46 +204,32 @@ img.cont-nom {
     max-width: none;
 }
 
-@media (min-width: 768px) {
-    .cont-nom {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2rem 1.5rem;
-    }
 
-    .nombre,
-    .alias,
-    .desnom {
-        text-align: left;
-    }
 
-    #foto-perfil {
-        width: 240px;
-        height: 240px;
-        margin: 0;
-    }
-}
-
-.descripcionp {
+.descripcionp, .descripcionc {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.descripcionp h2 {
+.descripcionp, .descripcionc h2 {
     font-size: xx-large;
+}
+
+#parrafo {
+    font-size: medium;
 }
 
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 0.5rem;
+    padding: 0 8px;
+    margin-top: 3%;
 }
 
 .container h2 {
-    font-size: xx-large;
-    text-align: center;
+    font-size: xx-large; /*Tamaño de fuente para el título*/
+    text-align: center;/*Alineación del titulo*/
 }
 
 .container p {
@@ -219,10 +238,10 @@ img.cont-nom {
 }
 
 .t-proyectos {
-    display: grid;
+    display: grid; /*Convierte la sección en tarjetas*/
     grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 1.5rem;
+    justify-items: center; /*Organiza las tarjetas para que no se pongan a la izquierda una sobre otra*/
+    gap: 24px; /*Es el espacio entre las tarjetas*/
     width: 100%;
 }
 
@@ -250,7 +269,7 @@ img.cont-nom {
     width: 350px;
     max-width: 100%;
     border: none;
-    margin-top: 4%;
+    margin-top: 20%;
     background: var(--color-fondo-tarjeta);
 }
 
@@ -278,11 +297,51 @@ img.cont-nom {
     box-shadow: 0 10px 26px -4px maroon;
 }
 
+.contactar {
+    margin: 0 auto;
+    max-width: 500px;
+    border: 1px solid gray;
+    padding: 32px;
+    text-align: center;
+    font-size: medium;
+    border-radius: 3%;
+}
+
+@media (min-width: 768px) {
+    .cont-nom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 24px;
+    }
+
+    .nombre, .alias, .desnom {
+        text-align: left;
+    }
+
+    #foto-perfil {
+        width: 240px;
+        height: 240px;
+        margin: 0;
+    }
+
+    .contactar {
+        width: 100%;
+        padding: 16px;
+    }
+}
+
 /* Vista en tablets */
 @media (min-width: 768px) {
     .t-proyectos {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.25rem;
+        gap: 20px;
+    }
+    
+    .contactar {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 32px;
     }
 }
 
@@ -292,6 +351,10 @@ img.cont-nom {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto);
         grid-auto-rows: auto;
-        gap: 1.5rem;
+        gap: 24px;
+    }
+    
+    .contactar {
+        max-width: 600px;
     }
 }

@@ -16,8 +16,36 @@
                 <a href="index3.html">Contacto</a>
             </div>
             <button id="boton-tema">Cambiar Tema</button>
+            <a href="documentos/Hoja_de_vida_Daniel_Millan.pdf" download="Hoja_de_vida_Daniel_Millan.pdf"><button id="boton-cv">Descargar CV</button></a>
         </nav>
     </header>
+
+
+    <section class="contacto">
+        <div class="descripcionc">
+            <h2 class="descripcionc" id="titulo-contacto">¡Contáctame!</h2>
+            <p class="descripcionc" id="parrafo">Aqui podrás contactarme, solicitar tus cotizaciones <br> y enviar tus comentarios acerca de a información de esta web.</p>
+        </div>
+    </section>
+
+    <section class="contactar">
+        <form class="contacto">
+            <label class="contacto" for="nombre">Nombre: <br></label>
+            <input class="contacto"  type="text" id="nombre" placeholder="Ingresa tu nombre..." required>
+            <br><br>
+            
+            <label class="contacto" for="correo">Correo: <br> </label>
+            <input class="contacto" type="email" id="correo" placeholder="nombre@correo.com" required>
+            <br><br>
+
+            <label class="contacto" for="mensaje">Mensaje: <br></label>
+            <textarea class="contacto"  name="mensaje" id="mensaje" placeholder="Ingresa texto..." required></textarea>
+            <br>
+            
+            <button class="contacto" id="enviar">Enviar</button>
+
+        </form>
+    </section>
 
     <script src="tema.js"></script>
 </body>
