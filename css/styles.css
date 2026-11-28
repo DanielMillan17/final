@@ -1,15 +1,20 @@
-:root {
-    --color-fondo-pagina: linear-gradient(90deg, white, rgb(162, 229, 255));
-    --color-fondo-header: linear-gradient(90deg, rgb(249, 248, 248), skyblue);
-    --color-fondo-tarjeta: #ffffff;
-    --color-texto: #1e293b;
-    --color-texto-header: black;
-    --radio-borde: 50px;
-    --borde-boton: black;
-    --color-sombra:orange;
-    --color-sombra-boton: blue;
-    --color-sombra-boton1: blue;
-    --color-sombra-boton2: darkorange;
+/* Paleta de colores y variables  por defecto 
+    Aquí se guardan colores y medidad con un nombre para utilizarlos facilmente sin tener que escribir el código cada vez o en cada linea que lo usemos o necesitemos */
+
+:root { /* Guarda variables paar no estar cambiando linea por linea */
+    --color-fondo-pagina: linear-gradient(90deg, white, rgb(162, 229, 255)); /* Degradado de blanco a azul claro */
+    --color-fondo-header: linear-gradient(90deg, rgb(249, 248, 248), skyblue); /* Degradado para la barra superior o el header */
+    --color-fondo-tarjeta: #ffffff; /* Fondo blanco para las tarjetas de proyectos */
+    --color-texto: #1e293b;/* Color gris muy oscuro para las letras */
+    --color-texto-header: black;/* Color negro para las letras de la barra superior o el header */
+    --radio-borde: 50px; /* Que tan redondas quiero las esquinas */
+    --borde-boton: black;/* Color del borde de los botones */
+    --color-sombra:orange;/* Color naranja para sombras principales */
+    --color-sombra-boton: blue;/* Color sombra azul para botones */
+    --color-sombra-boton1: blue;/* Color sombra azul para el boton "Ver proyectos" */
+    --color-sombra-boton2: darkorange;/* Color sombra para el boton "Contactar" */
+    --color-sombra-tag1: rgb(0, 247, 0);
+    --color-sombra-tag2: rgb(27, 176, 4);
 }
 
 .oscuro {
@@ -261,6 +266,12 @@ img.cont-nom {
     font-size: medium;
 }
 
+.t-proyectos p {
+    font-size: small;
+    text-align: justify;
+    padding: 0 10px;
+}
+
 .t-proyectos a {
     text-decoration: none;
     color: inherit;
@@ -298,6 +309,30 @@ img.cont-nom {
 
 .t-proyectos #p6 {
     box-shadow: 0 10px 26px -4px maroon;
+}
+
+.tags-proyecto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tags-proyecto span {
+    font-size: x-small;
+    padding: 3px 6px;
+    border-radius: var(--radio-borde);
+    border: 1px solid var(--borde-boton);
+    margin: 10px 8px;
+    padding: 2%;
+}
+#s1 {
+    box-shadow: 0 0 20px -2px var(--color-sombra-tag1);
+    border: 1px solid var(--borde-boton);
+}
+
+#s2 {
+    border: 1px solid var(--borde-boton);
+    box-shadow: 0 0 20px -2px var(--color-sombra-tag2);
 }
 
 .contactar {
